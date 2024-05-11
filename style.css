@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar{
+    display:none
+}
+
+
+:root{
+    --main: #5AACC6;
+    --submain: #041538;
+    --1: #3C73A9 ;
+    --gray: #5c5d70;
+    --blues: #2A5178;
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(fonts/Rubik/static/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: RubikBold;
+    src: url(fonts/Rubik/static/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: RubikSemi;
+    src: url(fonts/Rubik/static/Rubik-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: RubikLight;
+    src: url(fonts/Rubik/static/Rubik-Light.ttf);
+}
+
+.container {
+	max-height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: proximity;
+	scroll-snap-type: y proximity;
+    scroll-snap-points-y: repeat(1rem);
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 8.6em ;
+    font-family: RubikSemi;
+    color: var(--submain)
+}
+
+
+
+.Logo{
+    display: flex;
+    margin-left: 4.6em;
+    height: 6em;
+    align-items: center;
+}
+
+.Logo img{
+    width: 6em;
+}
+
+.Logo h1{
+    font-size: 28px;
+}
+
+
+.BT{
+    margin-right: 4.6em;
+}
+
+nav button{
+    width: 12.5em;
+    height: 3.125em;
+    border-radius: 19px;
+    margin-right: 2em;
+    font-size: 16px;
+    text-align: center;
+    border: #000;
+    background-color: var(--blues);
+    color: white;
+}
+
+nav button:hover{
+    background-color: var(--submain);
+    transition: 0.5s;
+}
+
+#hd{
+    height: 522px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(images/InitialImage.png);
+    background-repeat: no-repeat;
+}
+#hd div{
+    margin-left: 4.8em;
+}
+
+#hd div h1{
+    font-family: RubikSemi;
+    margin-bottom: 0.5em ;
+    font-size: 36px;
+}
+
+#hd div p{
+    font-family: Rubik;
+    font-size: 20px;
+    width: 55%;
+    margin-bottom: 1.6em;
+}
+
+#hd div button{
+    width: 12.5em;
+    height: 3.125em;
+    border-radius: 25px;
+    font-size: 18px;
+    text-align: center;
+    border: #000;
+    background-color: var(--blues);
+    color: white;
+}
+
+#hd div button:hover{
+    background-color: var(--submain);
+    transition: 0.5s;
+}
+
+#s1{
+    margin-top: 2.6em;
+    display: grid;
+    grid-template-rows: 2.9em 1fr;
+    grid-template-columns: 1fr 1fr;
+    scroll-snap-align: center;
+}
+
+#s1 h1{
+    grid-column: 1/3;
+    font-size: 28px;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    font-family: RubikBold;
+}
+
+#s1 div{
+    display: flex;
+    align-self: center;
+    justify-content:end;
+    grid-row: 2;
+    grid-column: 1;
+    margin-right: 2em;
+}
+
+.rimg{
+    height: 35em;
+}
+
+#s1 p{
+    font-family: Rubik;
+    align-self: center ;
+    font-size: 22px;
+    margin-left: 2em;
+    width: 65%;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#s2{
+    display: grid;
+    margin-bottom: 7.5em;
+    margin-top: 2.6em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4.6em 1fr;
+}
+
+#s2 h1{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-family: RubikSemi;
+    grid-column: 1/5;
+    grid-row: 1;
+}
+
+#s2 h3{
+    font-family: RubikLight;
+    font-size: 24px;
+    margin-top: 1em;
+}
+
+.Conocer{
+    grid-column: 1;
+    grid-row: 2;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Conocer:hover{
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+.Meditar{
+    grid-column: 2;
+    grid-row: 2;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Meditar:hover{
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+.Ejercitar{
+    grid-column: 3;
+    grid-row: 2;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Ejercitar:hover{
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+.Pensar{
+    grid-column: 4;
+    grid-row: 2;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Pensar:hover{
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+#s3{
+    background-color: var(--1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11.2em;
+    flex-direction: column;
+    scroll-snap-align: end;
+}
+
+.quote{
+    font-size: 24px;
+    width: 65%;
+    font-family: Rubik;
+}
+
+.ralign{
+    text-align: right;
+    font-family: Rubik;
+    font-size: 24px;
+    justify-content: end;
+    align-self: end;
+    margin-right: 12em;
+}
+
+#s4{
+    margin-top: 3.2em;
+    margin-bottom: 7.5em;
+    display: grid;
+    grid-template-columns: 15.6em 12em 18em 1fr;
+    grid-template-rows: 7em 11em 11em 11em;
+    scroll-snap-align: start;
+    font-family: Rubik;
+}
+
+#s4 h1{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: RubikBold;
+    font-size: 28;
+    grid-column: 1/6;
+    grid-row: 1;
+}
+
+#s4 p{
+    align-self: center;
+    grid-column: 4;
+    grid-row: 2/5;
+    width: 80%;
+    font-size: 24px;
+}
+
+.imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 ;
+    grid-row: 2/5;
+}
+
+#s4 h5{
+    font-size: 24px;
+    justify-content: center;
+    align-self: center;
+}
+
+.con{
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.tras{
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.crec{
+    grid-row: 4;
+    grid-column: 3;
+}
+
+#s5{
+    display: grid;
+    grid-template-rows: 5em 24em 24em 24em;
+    grid-template-columns: 1fr 1fr;
+    scroll-snap-align: start;
+    font-family: Rubik;
+    margin-bottom: 10em;
+
+}
+
+#s5 h1{
+    grid-column: 1/3;
+    grid-row:1;
+    display: flex;
+    justify-content: center;
+    font-family: RubikBold;
+
+}
+
+#s5 h2{
+    font-family: RubikSemi;
+    font-size: 24px;
+}
+
+#s5 img{
+    width: 30em;
+    margin-top: 5%;
+}
+
+.Leyendo{
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 3em;
+}
+
+.Meditando{
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    margin-right: 1em;
+}
+
+.Pintando{
+    grid-column: 2;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 3em;
+}
+
+.pleye{
+    font-size: 20px;
+    width: 70%;
+}
+
+.pmedi{
+    text-align: right;
+    font-size: 20px;
+    width: 75%;
+}
+
+.ppaint{
+    font-size: 20px;
+    width: 75%;
+}
+
+div .imgl{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.img1{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.imgm{
+    margin-left: 3em;
+}
+
+.imgp{
+    margin-left: 12.8em;
+}
+
+#s6{
+    font-family: Rubik;
+    background-color: var(--1);
+    color:white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 9em;
+    scroll-snap-align: start;
+}
+
+#s6 p{
+    width: 65%;
+}
+
+.ralign2{
+    text-align: right;
+    font-family: Rubik;
+    font-size: 24px;
+    justify-content: end;
+    align-self: end;
+    margin-right: 12em;
+}
+
+#s7{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 67vh;
+    background-image: url(images/LastImage.png);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    color: #E1E2E6;
+    font-family: RubikSemi;
+    font-size: 32px;
+}
+
+footer{
+    background-color: var(--blues);
+    color: white;
+    font-family: RubikBold;
+    font-size: 24px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.d1,.d2,.d3,.d4,.d5{
+    display: flex;
+    align-items: center ;
+    margin-left: 5.3em;
+}
+
+footer h4{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.h4{
+    margin-top: 0.7em;
+    margin-left: 5.3em;
+}
+
+.d1{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.d2{
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.d3{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.d4{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.d5{
+    grid-row: 4;
+    grid-column: 2;
+}
+
+@media only screen and (min-width: 1441px) {
+#hd{
+    background-image: url(images/CompleteInitialImage.png);
+    background-position: 6% 41% ;
+    background-size: 160%;
+}
+
+#s4{
+    grid-template-columns: 27.9em 13em 20em 1fr;;
+    grid-template-rows: 7em 11em 11em 11em;
+}
+
+#s4 p{
+    width: 54%;
+}
+
+#s6 div{
+    margin-left: 53%;
+    width: 100%;
+}
+
+.ralign2{
+    margin-right: 28%;
+}
+
+.ralign{
+    margin-right: 19em;
+}
+
+#s5{
+    grid-template-rows: 5em 24em 24em 24em;
+    grid-template-columns: 1fr 1.02fr;
+}
+
+.img1{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.imgm{
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+}
+
+.imgp{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.pleye{
+    width: 52% ;
+}
+.pmedi{
+    width: 52% ;
+}
+.ppaint{
+    width: 54% ;
+}
+}
+
+
+@media only screen and (max-width: 1024px) {
+body{
+    background-color: rgba(156, 148, 148, 0.067);
+}
+}
+
+
+
