@@ -141,7 +141,7 @@ nav button:hover{
     width: 100%;
     margin-top: 2.6em;
     display: grid;
-    grid-template-rows: 2.9em 1fr;
+    grid-template-rows: 3.9em 1fr;
     grid-template-columns: 1fr 1fr;
     scroll-snap-align: center;
 }
@@ -165,8 +165,13 @@ nav button:hover{
 }
 
 .rimg{
-    height: 35em;
+    height: 34em;
+    grid-row: 2;
+    grid-column: 1;
+    margin-left: 25%;
 }
+
+
 
 #s1 p{
     font-family: Rubik;
@@ -604,12 +609,37 @@ footer h4{
 }
 }
 
+.phoneimg{
+    visibility: hidden ;
+}
 
 @media only screen and (max-width: 1024px) {
 body{
-    background-color: rgba(156, 148, 148, 0.067);
+    background-color: purple;
+}
+}
+
+@media only screen and (max-width: 900px){
+body{
+    background-color: cadetblue;
+}
+}
+
+@media only screen and (max-width: 768px){
+body{
+    background-color: red;
+}
+.phoneimg{
+    visibility: visible ;
 }
 }
 
 
-
+@media only screen and (max-width: 430px){
+    body{
+        background-color: yellow;
+    }
+    .phoneimg{
+        visibility: visible ;
+    }
+}
