@@ -102,7 +102,7 @@ nav button:hover{
     font-family: Rubik;
     flex-direction: column;
     justify-content: center;
-    background-image: url(images/InitialImage.png);
+    background-image: url(images/InitialImage.jpg);
     background-repeat: no-repeat;
 }
 #hd div{
@@ -546,7 +546,7 @@ footer h4{
 
 @media only screen and (min-width: 1441px) {
 #hd{
-    background-image: url(images/CompleteInitialImage.png);
+    background-image: url(images/CompleteInitialImage.jpg);
     background-position: 6% 41% ;
     background-size: 160%;
     width: 100%;
