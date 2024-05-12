@@ -130,15 +130,12 @@ nav button:hover{
     border: #000;
     background-color: var(--blues);
     color: white;
+    font-family: Rubik;
 }
 
 #hd div button:hover{
     background-color: var(--submain);
     transition: 0.5s;
-}
-
-.ap{
-    font-family: Rubik;
 }
 
 #s1{
