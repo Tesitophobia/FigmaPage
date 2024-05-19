@@ -79,10 +79,10 @@ nav{
 }
 
 nav button{
-    width: 12.5em;
+    width: 10.5em;
     height: 3.125em;
     border-radius: 19px;
-    margin-right: 2em;
+    margin-right: 1em;
     font-size: 16px;
     text-align: center;
     border: #000;
@@ -615,9 +615,82 @@ footer h4{
     visibility: hidden ;
 }
 
+
+
 @media only screen and (max-width: 1024px) {
-body{
-    background-color: purple;
+#hd{
+    background-position: 60% 0%;
+}
+
+#s1{
+    scroll-snap-align: none;
+}
+
+.rimg{
+    height: 28em;
+}
+
+#s1 p{
+    font-size: 18px;
+}
+
+#s3{
+    scroll-snap-align: none;
+}
+.ralign{
+    margin-right: 8em;
+}
+
+#s4{
+    grid-template-columns:5.6em 12em 18em 1fr ;
+    grid-template-rows:7em 11em 11em 11em ;
+    scroll-snap-align: none;
+}
+
+#s4 p{
+    font-size: 20px;
+}
+
+#s5{
+    scroll-snap-align: none;
+    grid-template-rows: 5em 24em 22em 19em ;
+}
+
+#s5 img{
+    width: 24em;
+}
+
+.imgp{
+    margin-left: 8em;
+}
+
+.Leyendo{
+    margin-top: 2em;
+}
+
+.Meditando{
+    margin-bottom: 3em;
+}
+
+.Pintando{
+    margin-bottom: 0.5em ;
+}
+
+#s6{
+    scroll-snap-align: none;
+}
+
+#s6 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ralign2{
+    margin-right: 10.1em;
+}
+
+footer{
+    font-size: 18px;
 }
 }
 
