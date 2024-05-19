@@ -88,6 +88,7 @@ nav button{
     border: #000;
     background-color: var(--blues);
     color: white;
+    font-family: Rubik;
 }
 
 nav button:hover{
