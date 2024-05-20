@@ -812,6 +812,16 @@ body{
 .phoneimg{
     visibility: visible ;
 }
+nav h1{
+    display: none;
+}
+#hd{
+    
+}
+#hd div h1{
+font-size: 32px;
+}
+
 }
 
 
