@@ -464,7 +464,13 @@ div .imgl{
 }
 
 #s6 p{
-    width: 65%;
+    width: 100%;
+}
+
+#s6 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ralign2{
@@ -473,7 +479,7 @@ div .imgl{
     font-size: 24px;
     justify-content: end;
     align-self: end;
-    margin-right: 12em;
+    margin-right: 10.5em;
 }
 
 #s7{
@@ -687,7 +693,7 @@ footer h4{
     align-items: center;
 }
 .ralign2{
-    margin-right: 10.1em;
+    margin-right: 3.5em;
 }
 
 footer{
@@ -790,7 +796,12 @@ nav button{
     grid-template-rows: 5em 20em 18em 15em;
 }
 #s6{
+    font-size: 20px;
     margin-top: -3em;
+}
+.ralign2{
+    font-size: 20px;
+    margin-right: 4.7em;
 }
 }
 
