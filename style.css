@@ -806,21 +806,56 @@ nav button{
 }
 
 @media only screen and (max-width: 768px){
-body{
-    background-color: red;
-}
 .phoneimg{
-    visibility: visible ;
+    visibility: hidden ;
 }
 nav h1{
     display: none;
 }
-#hd{
-    
-}
 #hd div h1{
 font-size: 32px;
 }
+
+.rimg{
+    width: 19em;
+    height: 23em;
+}
+
+#s1 p{
+    width: 70%;
+}
+
+#s4 {
+    grid-template-columns: 1.6em 11em 13em 1fr;
+}
+
+#s4 p{
+    font-size: 18px;
+}
+
+#s5 img{
+    width: 18em;
+}
+
+.imgp{
+    margin-left: 4.2em;
+}
+
+#s6{
+    font-size: 16px;
+}
+
+#s7{
+margin-top: 0em;
+margin-bottom: 0em;
+height: 50vh;
+}
+
+footer{
+    font-size: 16px;
+    align-items: left;
+}
+
 
 }
 
