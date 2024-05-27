@@ -874,10 +874,114 @@ footer{
 
 
 @media only screen and (max-width: 430px){
-    body{
-        background-color: yellow;
+    .phoneimg{
+  visibility: visible;
+    }
+    nav{
+        height: 10em;
+        flex-direction: column;       
+    }
+
+    #s1{
+        grid-template-rows: 3.9em 18em;
+        grid-template-columns: 1fr;
+    }
+
+    #s1 p{
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .rimg{
+        height: 15em;
+        width: 13em;
+    }
+    #s1 p{
+        text-align: center;
+        margin-left: 15%;
+    }
+
+    nav button{
+        height: 3em;
+        width: 7em;
+    }
+    
+    .BT{
+        margin-right: 0px;
+        margin-left: 8px;
+        margin-bottom: 1em;
+    }
+
+    .Logo{
+        margin-left: 0px;
+    }
+
+    #hd div h1{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #hd div p {
+        font-family: Rubik;
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 1.6em;
+    }
+
+    #s2{
+        grid-template-columns: 13.4em 13.4em;
+        grid-template-rows: 4.6em 13em 13em  ;
+    }
+
+    .Conocer{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .Meditar{
+        grid-column: 2;
+        grid-row: 2 ;
+    }
+
+    .Ejercitar{
+        grid-column: 1;
+        grid-row: 3 ;
+    }
+
+    .Pensar{
+        grid-column: 2;
+        grid-row: 3 ;
+    }
+
+    .quote {
+        font-size: 16px;
+    }
+    .ralign {
+        font-size: 16px;
+        margin-right: 5em;
+    }
+    .imgs{
+        display: none;
     }
     .phoneimg{
-        visibility: visible ;
+        grid-column: 1/4;
+        grid-row: 2;
+        width: 100%;
+    }
+    .phoneimg img{
+        height: 6.6em;
+    }
+    #s4{
+         grid-template-columns: 5.6em 5em 17em;
+    }
+    .con{
+    grid-column: 1 ;
+    grid-row:2 ;
+    }
+
+    #s4 p{
+        grid-column: 1/4;
+        grid-row: 4 ;
     }
 }
