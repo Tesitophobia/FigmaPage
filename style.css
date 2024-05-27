@@ -701,6 +701,19 @@ footer{
 }
 }
 
+@media only screen and (max-width: 1016px){
+    body{
+        background-color: yellow;
+    }
+    nav h1{
+        display: none;
+    }
+     
+    .phoneimg{
+visibility: hidden;
+    }
+}
+
 @media only screen and (max-width: 900px){
 
 nav{
