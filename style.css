@@ -702,9 +702,6 @@ footer{
 }
 
 @media only screen and (max-width: 1016px){
-    body{
-        background-color: yellow;
-    }
     nav h1{
         display: none;
     }
@@ -872,6 +869,233 @@ footer{
 
 }
 
+@media only screen and (max-width: 600px){
+#hd{
+    background-position: 86% 50%;
+}
+
+ #s5{
+    grid-template-rows: 3em 16em 14em 14em 14em 16em;
+    grid-template-columns: 1fr;
+}
+
+ .img1{
+    align-items: center;
+    justify-content: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.Leyendo{
+    align-items: center;
+    justify-content: center;
+    grid-column: 1;
+    grid-row: 3;
+    margin:0;
+
+}
+
+.imgm{
+    margin:0;
+    align-items: center;
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.Meditando{
+    align-items: center;
+    justify-content: center;
+    grid-column: 1;
+    grid-row: 5;
+    margin:0;
+}
+
+.pmedi{
+    text-align: left;
+}
+
+.imgp{
+    align-items: center;
+    justify-content: center;
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.Pintando{
+    align-items: center;
+    justify-content: center;
+    grid-column: 1;
+    grid-row: 7;
+    margin:0;
+}
+
+#s5 h2{
+    margin-bottom: 1em;
+}
+
+#s6 div{
+    margin-left: 8%;
+}
+
+#s6 p{
+margin-right: 2.3em ;
+}
+
+footer{
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.d1{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.d2{
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.d3{
+    grid-row: 5;
+    grid-column: 1;
+}
+
+.d4{
+    grid-row: 6;
+    grid-column: 1;
+}
+
+.d5{
+    grid-row: 7;
+    grid-column: 1;
+}
+
+.phoneimg{
+    visibility: visible;
+      }
+      nav{
+          height: 10em;
+          flex-direction: column;       
+      }
+  
+      #s1{
+          grid-template-rows: 3.9em 18em;
+          grid-template-columns: 1fr;
+      }
+  
+      #s1 p{
+          grid-row: 3;
+          grid-column: 1;
+      }
+  
+      .rimg{
+          height: 15em;
+          width: 13em;
+          margin-left: 33%;
+      }
+      #s1 p{
+          text-align: center;
+          margin-left: 15%;
+      }
+  
+      nav button{
+          height: 3em;
+          width: 7em;
+      }
+      
+      .BT{
+          margin-right: 0px;
+          margin-left: 8px;
+          margin-bottom: 1em;
+      }
+  
+      .Logo{
+          margin-left: 0px;
+      }
+  
+      #hd div h1{
+          font-size: 30px;
+          width: 100%;
+          text-align: center;
+      }
+  
+      #hd div p {
+          font-family: Rubik;
+          font-size: 20px;
+          width: 100%;
+          margin-bottom: 1.6em;
+      }
+  
+      .quote {
+          font-size: 16px;
+      }
+      .ralign {
+          font-size: 16px;
+          margin-right: 5em;
+      }
+      .imgs{
+          display: none;
+      }
+      .phoneimg{
+          grid-column: 1/4;
+          grid-row: 2;
+          width: 100%;
+          margin-left: 8%;
+      }
+      .phoneimg img{
+          height: 7.6em;
+      }
+      #s4{
+        grid-template-columns: 12.5em 12.5em 12.5em 0em 0em;
+        grid-template-rows: 5em 13em 0em;
+        margin-bottom: 4.5em;
+      }
+
+      #s5 div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      #s4 h5{
+          justify-self: center;
+          margin-top: 5em;
+          font-size: 14px;
+      }
+  
+  
+      .con{
+      grid-column: 1 ;
+      grid-row:2 ;
+      }
+  
+      .tras{
+          grid-column: 2 ;
+          grid-row:2 ;
+          margin-right: 1em;
+      }
+  
+      .crec{
+          grid-column: 3 ;
+          grid-row:2 ;
+          margin-left: -1em;
+      }
+  
+      #s4 p{
+          grid-column: 1/4;
+          grid-row: 4 ;
+          justify-self: center;
+          align-items: center;
+          text-align: center;
+      }
+  
+  
+
+
+}
+
 
 @media only screen and (max-width: 430px){
     .phoneimg{
@@ -895,6 +1119,7 @@ footer{
     .rimg{
         height: 15em;
         width: 13em;
+        margin-left: 25%;
     }
     #s1 p{
         text-align: center;
@@ -968,20 +1193,50 @@ footer{
         grid-column: 1/4;
         grid-row: 2;
         width: 100%;
+        margin-left: 7%;
     }
     .phoneimg img{
-        height: 6.6em;
+        height: 5.6em;
     }
     #s4{
-         grid-template-columns: 5.6em 5em 17em;
+        grid-template-columns: 9em 9em 9em;
+        grid-template-rows: 5em 9em 0em;
+        margin-bottom: 4.5em;
     }
+
+    #s4 h5{
+        justify-self: center;
+        margin-top: 5em;
+        font-size: 14px;
+    }
+
+
     .con{
     grid-column: 1 ;
     grid-row:2 ;
     }
 
+    .tras{
+        grid-column: 2 ;
+        grid-row:2 ;
+        margin-right: 1em;
+    }
+
+    .crec{
+        grid-column: 3 ;
+        grid-row:2 ;
+        margin-left: -1em;
+    }
+
     #s4 p{
         grid-column: 1/4;
         grid-row: 4 ;
+        justify-self: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imgp{
+        margin-left: 0px;
     }
 }
